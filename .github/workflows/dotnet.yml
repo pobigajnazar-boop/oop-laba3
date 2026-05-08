@@ -20,10 +20,10 @@ jobs:
         dotnet-version: '10.0.x'
 
     - name: Відновлення залежностей
-      run: dotnet restore TestProject1/TestProject1.csproj
+      run: dotnet restore TestProject2/TestProject2.csproj
 
     - name: Збірка проєкту (Build)
-      run: dotnet build TestProject1/TestProject1.csproj --no-restore
+      run: dotnet build TestProject2/TestProject2.csproj --no-restore
 
     - name: Запуск тестів (Test)
-      run: dotnet test TestProject1/TestProject1.csproj --no-build --verbosity normal
+      run: dotnet test TestProject2/TestProject2.csproj --no-build --verbosity normal
